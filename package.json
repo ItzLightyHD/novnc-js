@@ -1,0 +1,23 @@
+{
+  "name": "node-novnc",
+  "version": "1.0.0",
+  "description": "Easily start a noVNC web server (includes WebSocket + web server)",
+  "main": "index.js",
+  "bin": "index.js",
+  "pkg": {
+    "assets": ["node_modules/**/*", "src/**/**"],
+    "targets": ["node12-win-x64", "node12-linux-x64", "node12-macos-x64"]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm i @maximegris/node-websockify express",
+    "start": "node index.js"
+  },
+  "author": "ItzLightyHD & ApexieDevelopment",
+  "license": "MIT",
+  "dependencies": {
+    "@maximegris/node-websockify": "^1.0.7",
+    "chalk": "^4.1.0",
+    "express": "^4.17.1"
+  }
+}
